@@ -1,0 +1,14 @@
+name: LobbyCompass
+description: None.
+
+author: SavageAvocado
+website: https://www.savagedev.net
+
+main: net.savagedev.lc.LobbyCompass
+api-version: "1.14"
+version: ${version}
+
+commands:
+  lobbycompass:
+    description: No.
+    aliases: [ "lc" ]

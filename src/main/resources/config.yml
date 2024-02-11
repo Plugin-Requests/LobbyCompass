@@ -1,0 +1,48 @@
+compass-item:
+  slot: 4
+  material: "Compass"
+  name: "&6&lWorld Selector &7(Right/Left Click)"
+  lore: [ ]
+  worlds:
+    - "lobby"
+
+lobby-compass:
+  title: "&6&lWorld Selector"
+  rows: 3
+  items:
+    0:
+      material: "Grass_Block"
+      amount: 1
+      name: "&aSurvival"
+      lore:
+        - "&7Click to play survival!"
+      actions:
+        - "message|&aTeleporting you to survival..."
+        - "teleport|world"
+    1:
+      material: "Crafting_Table"
+      amount: 1
+      name: "&bCreative"
+      lore:
+        - "&7Click to play creative!"
+      actions:
+        - "message|&aTeleporting you to creative..."
+        - "teleport|creative"
+    2:
+      material: "Nether_Star"
+      amount: 1
+      name: "&9Spawn"
+      lore:
+        - "&7Click to teleport to spawn!"
+      actions:
+        - "message|&aTeleporting you to spawn..."
+        - "command:player|spawn"
+    3:
+      material: "Barrier"
+      amount: 1
+      name: "&9Suicide"
+      lore:
+        - "&7Click to do self-death!"
+      actions:
+        - "message|&4RIP"
+        - "command:console|kill %player%"
